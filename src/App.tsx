@@ -81,6 +81,11 @@ export default function App() {
           </div>
         )}
       </div>
+
+      {/* Footer */}
+      <footer className="text-center text-gray-400 mt-[32rem] border-t border-gray-700">
+        <p className='pt-5 text-lg'>Made with <span role="img" aria-label="heart">❤️</span> by <a href="https://github.com/tushxr05" className="text-yellow-400 hover:underline">tushxr05</a></p>
+      </footer>
     </div>
   );
 }

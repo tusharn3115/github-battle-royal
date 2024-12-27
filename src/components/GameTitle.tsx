@@ -4,30 +4,6 @@ import { motion } from "framer-motion";
 export function GameTitle() {
   return (
     <>
-      <div className="absolute top-8 right-10 flex gap-6 items-center sm:flex-col sm:items-center sm:top-4 sm:right-4 sm:gap-4">
-        {/* Twitter Button */}
-        <a
-          href="https://x.com/tushxr05"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 p-3 rounded-full bg-blue-500 hover:bg-blue-700 transition-all duration-200 sm:w-full sm:justify-center"
-        >
-          <Twitter className="w-6 h-6 text-white" />
-          <span className="text-white font-semibold text-sm sm:text-xs">Twitter</span>
-        </a>
-
-        {/* GitHub Star Button */}
-        <a
-          href="https://github.com/tusharn3115/github-battle-royal"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 p-3 rounded-full bg-gray-800 hover:bg-gray-600 transition-all duration-200 sm:w-full sm:justify-center"
-        >
-          <Github className="w-6 h-6 text-white" />
-          <span className="text-white font-semibold text-sm sm:text-xs">Give a Star</span>
-        </a>
-      </div>
-
       <motion.div
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -58,6 +34,11 @@ export function GameTitle() {
           </p>
         </div>
       </motion.div>
+      <div className="absolute top-3 right-3 lg:top-5 lg:right-10 flex gap-5 p-2 rounded-full bg-slate-700">
+        <a href="https://github.com/tusharn3115/github-battle-royal" target="_blank" rel="noopener noreferrer">
+            <Github className="size-4 lg:size-6" />
+        </a>
+      </div>
     </>
   );
 }
